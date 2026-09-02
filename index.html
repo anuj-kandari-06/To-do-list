@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>To Do List</title>
+</head>
+
+<body>
+    <!-- heading section start here -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row  text-center">
+                <div class="col-12">
+                    <h1 class="fw-bold fs-1 "> TO DO List</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- heading  section end here -->
+
+    <!-- input and button start here -->
+    <section>
+        <div class="container">
+            <div class="d-flex gap-2">
+                <input type="text" class="form-control " id="taskInput" placeholder="Enter task">
+                <button id="addBtn" class="btn btn-primary">Add</button>
+            </div>
+
+            <!-- task list start here -->
+            <div class="mt-5">
+                <h2 class="text-center fs-1 fw-semibold">Task List</h2>
+                <div id="taskList" class="mt-4"></div>
+            </div>
+        </div>
+        <!-- counter stare here -->
+        <hr>
+        <p class="text-center">
+            Completed:
+            <span id="CompletedCount">0</span>
+
+            |
+
+            <span id="uncompletedCount">0</span>
+        </p>
+        <!-- counter end here -->
+    </section>
+    <!-- inout and button end here -->
+
+    <!-- bootstrape js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
