@@ -71,10 +71,39 @@ function deleteTask(button) {
 }
 
 function editTask(button) {
-    let taskText = button.parentElement.querySelector(".task-text");
-    let newTask = prompt("Edit your task:", taskText.textContent.trim());
+    let taskBox = button.parentElement;
+    let taskText = taskBox.querySelector(".task-text");
+    let checkbox = taskBox.querySelector("input[type='checkbox']");
+    let oldTask = taskText.textContent.trim();
 
-    if (newTask !== null && newTask.trim() !== "") {
-        taskText.textContent = newTask;
+    checkbox.style.display= "none";
+    // let newTask = prompt("Edit your task:", taskText.textContent.trim());
+
+    taskText.innerHTML = `
+ <input type = "text" class= "form-control edit-input" value="${oldTask}"> 
+
+        // <button class="btn btn-success btn-sm mt-2"
+        //         onclick="saveTask(this)">
+        //     Save
+        // </button>
+    `;
+ button.style.display = "none";
+
+ letinput = taskText.querySelector(".edit-input");
+ input.focus();
+//  document.getElementById("editTask").focus();
+    // if (newTask !== null && newTask.trim() !== "") {
+    //     taskText.textContent = newTask;
+    // }
+}
+function saveTask(button){
+    let taskBox = button.parentElement.parentElement;
+    let taskText = taskBox.querySelector(".task-text");
+    let input = taskText.querySelector("#editTask");
+    let newTask = input.value.trim();
+
+    if(newTask === ""){
+        return;
     }
+    taskText.textContent = newTask;
 }
