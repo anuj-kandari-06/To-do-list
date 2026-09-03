@@ -1,3 +1,62 @@
 body{
     background-color:#fff;
 }
+
+.input-box {
+    display: flex;
+    width:30%;
+    gap: 15px;
+    margin-bottom: 45px;
+}
+
+#taskInput {
+    flex: 1;
+    height: 55px;
+    padding: 0 15px;
+    font-size: 20px;
+    border-radius: 7px;
+   
+}
+
+#addBtn {
+    width: 70px;
+    height: 50px;
+    border-radius: 7px;
+    background: #0d6efd;
+    color: white;
+     border: none;
+    font-size: 20px;
+}
+
+
+#taskList {
+    width:30%;
+    margin: auto;
+}
+
+#taskList > div {
+    min-height: 55px;
+    margin-bottom: 15px;
+    padding: 10px 15px !important;
+    border: 2px solid #555 !important;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    background: transparent;
+}
+
+#taskList .task-text {
+    font-size: 21px;
+}
+
+#taskList button {
+    font-size: 17px;
+}
+
+.task-count {
+    border-top: 3px solid #0d6efd;
+    margin-top: 30px;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 25px;
+}
