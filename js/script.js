@@ -11,7 +11,7 @@ function displayTasks() {
         taskList.innerHTML += `
 <div class="border rounded p-3 mb-3 d-flex align-items-center task-box">
 <input type="checkbox" class="form-check-input me-3 task-checkbox" ${task.completed ? "checked" : ""} onchange="completeTask(this,${index})">
-<span class="flex-grow-1 task-text me-3" style="text-decoration:${task.completed ? "line-through" : "none"};color:${task.completed ? "gray" : "black"}">${task.text}</span>
+<span class="flex-grow-1 task-text me-3" style="text-decoration:${task.completed ? "line-through" : "none"};color:${task.completed ? "#808080" : "#fff"}">${task.text}</span>
 <input type="text" class="form-control edit-input me-2" value="${task.text}" style="display:none;">
 <button class="btn btn-sm btn-success save-btn me-2" onclick="saveTask(this,${index})" style="display:none;">Save</button>
 <button class="btn btn-sm btn-danger me-2" onclick="deleteTask(${index})">Delete</button>

@@ -1,5 +1,9 @@
 body{
-    background-color:#F0F8FF;
+    background-color:#F4F7FB;
+}
+
+h1 , h2 , p{
+    color: #fff;
 }
 
 .input-box {
@@ -22,7 +26,8 @@ body{
     width: 70px;
     height: 50px;
     border-radius: 7px;
-    color: #000;
+    color: #fff;
+     background-color:#2563EB;
      border: none;
     font-size: 20px;
 }
@@ -72,8 +77,31 @@ body{
     width:660px;
     margin:35px auto;
     padding:55px 32px 30px;
-    background:	#00FFFF;
+    background:	#172554;
     border:3px solid #000000;
     border-radius:22px;
     box-sizing:border-box;
+}
+
+hr{
+    color: #9CA3AF;
+    opacity: 1;
+}
+
+
+@media (max-width:768px) {
+    .todo-box{
+        width:100%;
+    }
+    .input-box{
+        width: 100%;
+    }
+    #taskList{
+        width: 100%;
+    }
+    .container{
+        max-width: 100%;
+        padding-left: 1px;
+        padding-right: 1px;
+    }
 }
