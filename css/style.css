@@ -1,10 +1,10 @@
 body{
-    background-color:#fff;
+    background-color:#F0F8FF;
 }
 
 .input-box {
     display: flex;
-    width:30%;
+    width:70%;
     gap: 15px;
     margin-bottom: 45px;
 }
@@ -22,15 +22,14 @@ body{
     width: 70px;
     height: 50px;
     border-radius: 7px;
-    background: #0d6efd;
-    color: white;
+    color: #000;
      border: none;
     font-size: 20px;
 }
 
 
 #taskList {
-    width:30%;
+    width:70%;
     margin: auto;
 }
 
@@ -59,4 +58,22 @@ body{
     padding-top: 15px;
     text-align: center;
     font-size: 25px;
+}
+.task-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.edit-btn,
+.save-btn {
+    width: 65px;
+}
+.todo-box{
+    width:660px;
+    margin:35px auto;
+    padding:55px 32px 30px;
+    background:	#00FFFF;
+    border:3px solid #000000;
+    border-radius:22px;
+    box-sizing:border-box;
 }

@@ -11,25 +11,31 @@
 
 <body>
     <!-- heading section start here -->
-    <section class="py-5">
+    <!-- <section class="py-5">
         <div class="container">
             <div class="row  text-center">
                 <div class="col-12">
                     <h1 class="fw-bold fs-1 "> TO DO List</h1>
                 </div>
             </div>
-        </div>
+        </div> -->
 
     <!-- heading  section end here -->
 
     <!-- input and button start here -->
-    <section>
+    <section class="py-5">
         <div class="container">
+            <div class="todo-box">
+            <div class="row  text-center">
+                <div class="col-12">
+                    <h1 class="fw-bold fs-1 "> TO DO List</h1>
+                </div>
+            </div>
             <div class="d-flex gap-2 justify-content-center mt-5">
                 <div class="input-box">
-                <input type="text" class="form-control" id="taskInput" placeholder="Enter task">
-                <button id="addBtn" class="btn btn-primary">Add</button>
-            </div>
+                    <input type="text" class="form-control" id="taskInput" placeholder="Enter task">
+                    <button id="addBtn" class="btn btn-primary">Add</button>
+                </div>
             </div>
 
             <!-- task list start here -->
@@ -37,18 +43,21 @@
                 <h2 class="text-center fs-1 fw-semibold ">Task List</h2>
                 <div id="taskList" class="mt-4"></div>
             </div>
+
+            <!-- counter stare here -->
+            <hr class="w-70 mx-auto mt-4 border border-primary">
+            <p class="text-center">
+                Completed:
+                <span id="completedCount">0</span>
+
+                |
+
+                uncompleted:
+                <span id="uncompletedCount">0</span>
+            </p>
+            <!-- counter end here -->
         </div>
-        <!-- counter stare here -->
-        <hr class="w-50 mx-auto mt-4">
-        <p class="text-center">
-            Completed:
-            <span id="CompletedCount">0</span>
-
-            |
-
-            <span id="uncompletedCount">0</span>
-        </p>
-        <!-- counter end here -->
+        </div>
     </section>
     <!-- inout and button end here -->
 
